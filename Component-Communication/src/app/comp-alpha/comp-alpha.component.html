@@ -1,0 +1,58 @@
+<!-- comp-alpha.component.html -->
+
+<div
+  style="
+    display: flex;
+    background-color: lightgreen;
+    padding: 1rem;
+    height: 10rem;
+    flex-direction: column;
+    margin: 2rem;
+  "
+>
+  <div style="display: flex; flex-direction: row; justify-content: center">
+    This is alpha component
+  </div>
+  <div style="display: flex; flex-direction: column; justify-content: center">
+    <div
+      style="
+        display: flex;
+        margin-top: 1rem;
+        margin-bottom: 1em;
+        justify-content: center;
+      "
+    >
+      <input
+        type="text"
+        name="alpaText"
+        id="alphaText"
+        [(ngModel)]="alphaText"
+      />
+    </div>
+    <div
+      style="
+        display: flex;
+        margin-top: 1rem;
+        margin-bottom: 1em;
+        justify-content: center;
+      "
+    >
+      Your Text - <b>{{ alphaText }}</b>
+    </div>
+    <div style="display: flex; flex-direction: row">
+      <div style="margin-left: 0.6rem; margin-right: 0.3rem">
+        <button>Pass to parent component</button>
+      </div>
+      <div style="margin-right: 0.6rem; margin-left: 0.3rem">
+        <button>Pass to beta component</button>
+      </div>
+    </div>
+
+    <div style="display: flex; flex-direction: column; padding: 0.5rem">
+      <div style="padding-top: 0.5rem; padding-bottom: 0.5rem">
+        <b>Whatever you see below is coming from parent component</b>
+      </div>
+      <div>{{ parentText }}</div>
+    </div>
+  </div>
+</div>

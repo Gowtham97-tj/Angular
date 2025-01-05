@@ -1,0 +1,5 @@
+<p>parent-component works!</p>
+<input type="text" [(ngModel)]="parentMessage" />
+<!-- <app-child-component (messageEvent)="receiveMessageMethod($event)"></app-child-component> -->
+<app-child-component [message]="parentMessage"></app-child-component>
+<p>the received message is : {{ receivedMessage }}</p>

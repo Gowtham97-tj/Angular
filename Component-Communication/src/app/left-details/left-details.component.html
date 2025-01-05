@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="left-header-style">Column Categories</div>
+  <div class="left-header-text">
+    <p>Choose column for the report from categories below</p>
+  </div>
+
+  <input class="search-input" type="text" placeholder="Search Fields" />
+
+  <div class="reset">
+    <a href="">Reset Column Categories</a>
+  </div>
+
+  <div class="accordian">
+    <div class="accordian-header">
+      <div (click)="onAccordianClick()">Project Information</div>
+      <div>{{ isTrue ? "-" : "+" }}</div>
+    </div>
+    <div class="accordian-line"></div>
+    <div *ngIf="isTrue">
+      <div class="accordian-value" *ngFor="let item of projectDataJson">
+        <input
+          type="checkbox"
+          [value]="item.isChecked"
+          [(ngModel)]="item.isChecked"
+          (change)="projectDetailUpdate()"
+        />
+        <div>{{ item.name }}</div>
+      </div>
+    </div>
+  </div>
+</div>

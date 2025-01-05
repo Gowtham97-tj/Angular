@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="right-header-style">Selected Report Columns</div>
+
+  <div class="right-header-text">
+    <p>
+      Drag and drop the columns below to rearrange them. The column order you
+      set here will be set here in the report.
+    </p>
+  </div>
+
+  <div class="search">
+    <input class="search-input" type="text" placeholder="Search Columns" />
+    <input class="reset" type="text" placeholder="Reset Column Order" />
+  </div>
+
+  <div class="floating-data">
+    <div class="floating-data-element" *ngFor="let item of dataArray">
+      <div>
+        {{ item.name }}
+      </div>
+      <div class="close-button">
+        <button type="button" (click)="updateProjectData(item.name)">x</button>
+      </div>
+    </div>
+  </div>
+</div>

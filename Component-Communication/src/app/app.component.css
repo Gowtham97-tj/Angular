@@ -1,0 +1,12 @@
+.header-left{
+    width: 35%
+}
+
+.header-right{
+    width: 65%;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+}

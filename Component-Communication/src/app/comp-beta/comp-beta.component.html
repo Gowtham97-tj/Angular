@@ -1,0 +1,46 @@
+<!--comp-beta.component.html -->
+
+<div
+  style="
+    display: flex;
+    background-color: lightpink;
+    padding: 1rem;
+    height: 20rem;
+    flex-direction: column;
+    margin: 2rem;
+  "
+>
+  <div style="display: flex; flex-direction: row; justify-content: center">
+    This is beta component
+  </div>
+  <div style="display: flex; flex-direction: column; justify-content: center">
+    <div
+      style="
+        display: flex;
+        margin-top: 1rem;
+        margin-bottom: 1em;
+        justify-content: center;
+      "
+    >
+      <input type="text" name="alpaText" [(ngModel)]="betaText" id="betaText" />
+    </div>
+    <div
+      style="
+        display: flex;
+        margin-top: 1rem;
+        margin-bottom: 1em;
+        justify-content: center;
+      "
+    >
+      Your Text - <b>{{ betaText }}</b>
+    </div>
+    <div style="display: flex; flex-direction: row">
+      <div style="margin-left: 0.6rem; margin-right: 0.3rem">
+        <button (click)="passToParent()">Pass to parent component</button>
+      </div>
+      <div style="margin-right: 0.6rem; margin-left: 0.3rem">
+        <button>Pass to alpha component</button>
+      </div>
+    </div>
+  </div>
+</div>
