@@ -1,0 +1,23 @@
+.student-detail{
+    background-color: rgb(207, 172, 172);
+    border-radius: 10px;
+    height: 700px;
+    margin-top: 10px;
+}
+
+.table{
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th{
+    text-align: center;
+    padding-top:25px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border: 2px solid rgb(108, 16, 16);
+    background-color: rgb(108, 16, 16);
+    color: antiquewhite;
+    border-radius: 10px;
+}

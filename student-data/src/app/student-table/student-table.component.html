@@ -1,0 +1,42 @@
+<head>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+</head>
+<body>
+  <div class="student-detail">
+    <table>
+      <tr>
+        <th>Id</th>
+        <th>Photo</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Department</th>
+        <th>Actions</th>
+      </tr>
+      <tr *ngFor="let student of students">
+        <td>{{ student.id }}</td>
+        <td>{{ student.image }}</td>
+        <td>{{ student.name }}</td>
+        <td>{{ student.age }}</td>
+        <td>{{ student.department }}</td>
+        <td>
+          <a [routerLink]="['view', student.id]"
+            ><i style="color: antiquewhite" class="fa fa-eye"></i
+          ></a>
+          |
+          <a [routerLink]="['edit', student.id]"
+            ><i style="color: antiquewhite" class="fa fa-edit"></i
+          ></a>
+          |
+          <i
+            style="color: antiquewhite"
+            class="fa fa-trash"
+            (click)="DeleteStudent(student.id)"
+          ></i>
+        </td>
+      </tr>
+    </table>
+  </div>
+</body>

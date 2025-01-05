@@ -1,0 +1,56 @@
+<form [formGroup]="profileForm">
+  <div class="input-box">
+    <label for="Id">Id: </label>
+    <input id="Id" type="text" formControlName="id" />
+  </div>
+  <div class="input-box">
+    <label for="name">Name: </label>
+    <input id="name" type="text" formControlName="name" />
+  </div>
+  <div class="input-box">
+    <label for="age">Age: </label>
+    <input id="age" type="text" formControlName="age" />
+  </div>
+  <div class="input-box">
+    <label for="sex">Sex: </label>
+    <select id="sex" formControlName="sex">
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+    </select>
+  </div>
+  <div class="input-box">
+    <label for="department">Department: </label>
+    <select id="department" formControlName="department">
+      <option value="Human Resource">Human Resource</option>
+      <option value="Engineering">Engineering</option>
+      <option value="Marketing">Marketing</option>
+      <option value="Finance">Finance</option>
+      <option value="Research and Development">Research and Development</option>
+      <option value="Sales">Sales</option>
+      <option value="Customer Support">Customer Support</option>
+      <option value="Operations">Operations</option>
+      <option value="IT">IT</option>
+      <option value="Administration">Administration</option>
+    </select>
+  </div>
+  <div class="input-box">
+    <label for="address">Address: </label>
+    <input id="address" type="text" formControlName="address" />
+  </div>
+  <div class="input-box">
+    <label for="bloodGroup">Blood Group: </label>
+    <select id="bloodgroup" formControlName="bloodgroup">
+      <option value="A+">A+</option>
+      <option value="A-">A-</option>
+      <option value="B+">B+</option>
+      <option value="B-">B-</option>
+      <option value="AB+">AB+</option>
+      <option value="AB-">AB-</option>
+      <option value="O+">O+</option>
+      <option value="O-">O-</option>
+    </select>
+  </div>
+  <form [formGroup]="profileForm" (ngSubmit)="submit()">
+    <button type="submit" [disabled]="!profileForm.valid">Submit</button>
+  </form>
+</form>

@@ -1,0 +1,54 @@
+{
+  "studentData": [
+    {
+      "id": "1",
+      "name": "Alice Johnson",
+      "age": "27",
+      "sex": "Female",
+      "image": "alice_johnson.jpg",
+      "department": "Human Resources",
+      "bloodGroup": "O+",
+      "address": "123 Maple Street, Springfield, IL"
+    },
+    {
+      "id": "2",
+      "name": "Michael Smith",
+      "age": 34,
+      "sex": "Male",
+      "image": "michael_smith.jpg",
+      "department": "Engineering",
+      "bloodGroup": "A+",
+      "address": "456 Oak Avenue, Lincoln, NE"
+    },
+    {
+      "id": "3",
+      "name": "Jessica Brown",
+      "age": 27,
+      "sex": "Female",
+      "image": "jessica_brown.jpg",
+      "department": "Marketing",
+      "bloodGroup": "B+",
+      "address": "789 Pine Road, Boston, MA"
+    },
+    {
+      "id": "4",
+      "name": "David Wilson",
+      "age": 42,
+      "sex": "Male",
+      "image": "david_wilson.jpg",
+      "department": "Finance",
+      "bloodGroup": "AB+",
+      "address": "321 Birch Lane, Denver, CO"
+    },
+    {
+      "id": "5",
+      "name": "Sophia Davis",
+      "age": 30,
+      "sex": "Female",
+      "image": "sophia_davis.jpg",
+      "department": "Research and Development",
+      "bloodGroup": "O-",
+      "address": "654 Cedar Court, Austin, TX"
+    }
+  ]
+}
